@@ -1,0 +1,186 @@
+.GameBoard {
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    font-family: 'Helvetica';
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+.double-column {
+    flex: 2!important;
+}
+.Game {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    flex-basis: 100%;
+    flex: 1;
+    justify-content:flex-start;
+    align-items:flex-start;
+    
+}
+.GameMenu {
+    width: 100%;
+}
+.GameTitle {
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+}
+.playBtn {
+    width: 150px;
+    height: 80px;
+    border: 2px solid rgb(207, 204, 204);
+    border-radius: 5px;
+    background: none;
+    color: rgb(207, 204, 204);
+    cursor: pointer;
+    font-weight: 900;
+    transition: all 0.5s;
+    margin-top: 10vh;
+}
+.backBtn {
+    min-width: 100px;
+    height: 40px;
+    margin-left: 3vw;
+    border: 2px solid rgb(207, 204, 204);
+    border-radius: 5px;
+    background: none;
+    color: rgb(207, 204, 204);
+    cursor: pointer;
+    font-weight: 900;
+    transition: all 0.5s;
+}
+.menuBtn {
+    min-width: 7vw;
+    height: 5vh;
+    margin-left: 3vw;
+    margin-top: 5vh;
+    border: 2px solid blue;
+    border-radius: 5px;
+    background: none;
+    color: blue;
+    cursor: pointer;
+    font-weight: 900;
+    transition: all 0.5s;
+}
+.backBtn:hover {
+    color: blue;
+    background: rgb(207, 204, 204);
+}
+.playBtn:hover {
+    color: blue;
+    background: rgb(207, 204, 204);
+    font-size: 16px;
+}
+.menuBtn:hover {
+    color: rgb(207, 204, 204);
+    background: blue;
+}
+
+.subTitle {
+    color: rgb(207, 204, 204);
+    margin-left: 5vw;
+    font-size: 14px;
+}
+.topRow {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    height: 80px;
+    line-height: 80px;
+}
+.Board {
+    position: relative;
+    display: grid;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    
+}
+.lvl-1 {
+    grid-template-columns: 1fr 1fr;
+}
+.lvl-2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.lvl-3 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.card {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    cursor: grab;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+}
+
+.bg-wrong {
+    background-color: crimson!important;
+    color: rgb(82, 13, 13);
+}
+
+.bg-correct {
+    background-color: green!important;
+    color: rgb(219, 219, 219);
+}
+
+.cardBack {
+    background-color: rgb(93, 113, 206);
+    transform: rotateY( 180deg );
+}
+.cardFront {
+    background-color: rgb(207, 204, 204);
+}
+.cardFront, .cardBack {
+    width:100%;
+    height: 100%;
+    font-size: 20px;
+    transition: all 0.8s;
+    margin: auto;
+    line-height: 150px;
+}
+
+.popup {
+    position: absolute;
+    background-color: rgb(207, 204, 204);
+    color: blue;
+    border-radius: 15px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 10%;
+    right: 10%;
+    top:25%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.stats {
+    margin: 0 auto;
+}
+.stats td {
+    min-width: 80px;
+}
